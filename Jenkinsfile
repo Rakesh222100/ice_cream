@@ -15,7 +15,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh "cd backend && docker compose up --build"
+                    sh "cd backend && sudo docker compose up --build"
                 }
             }
         }
