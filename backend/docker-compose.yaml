@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./backend
+    image: rakeshnewdocker/rakesh-flask:v1
+    container_name: backend
+    ports:
+      - "8007:8005"
+    environment:
+      - env_name=qa

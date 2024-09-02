@@ -13,7 +13,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh "docker compose up --build"
+                    sh "cd backend && docker compose up --build"
                 }
             }
         }
