@@ -1,5 +1,7 @@
 pipeline {
-    agent my_new_node
+    agent {
+        label 'my_new_node'
+    }
 
     environment {
         // Define environment variables here if needed
